@@ -4,7 +4,7 @@ while true
 do
 echo "enter your guess:"
 read value
-if [[$value =~ [^0-9]]
+if [[$value =~ [^0-9]]]
 then
 echo "$value is not an integer"
 echo "enter a integer value:"
