@@ -22,7 +22,7 @@ done
 }
 echo "start the game"
 echo "guess the number of files in current directory"
-total=$(ls -a|wc -l)   #including hidden files 
+total=$(ls -lA|grep "^-"|wc -l)   #including hidden files 
 game
 echo "game ended"
 
